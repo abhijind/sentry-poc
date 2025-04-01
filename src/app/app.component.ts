@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sentry-poc';
+
+  throwError() {
+    throw new Error('This is a test error from the app component');
+  }
 }
